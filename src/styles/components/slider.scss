@@ -1,0 +1,42 @@
+
+  .baner__img{
+    @extend .img-fluid;
+  }
+  
+  .thumbnails{
+    @include make-row();
+    background-color: $dark-grey-blue;
+    padding: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+  .arrow{
+    @include make-col-ready();
+    @include make-col(1);
+  }
+  .thumbnail-picture{
+    @include make-col-ready();
+    @include make-col(2);
+    
+    &__img{
+      @extend .img-fluid;
+    }
+  }
+
+  .thumbnail-phone{
+    display: none;
+    @include make-row();
+    background-color: $dark-grey-blue;
+    padding: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .thumbnail-phone-picture{
+    @include make-col-ready();
+    @include make-col(6);
+    &__img{
+      @extend .img-fluid;
+    }
+  }

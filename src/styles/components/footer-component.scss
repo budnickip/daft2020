@@ -1,0 +1,74 @@
+
+  .social-section{
+    @include make-col-ready();
+    @include media-breakpoint-down(md) {
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(lg) {
+        @include make-col(3);
+    }
+    padding-top: 30px;
+    &__items{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+    }
+    &__link{
+      padding: 16px;
+      text-decoration: none;
+    }
+  
+  }
+  .policy-section{
+    @include make-col-ready();
+    @include media-breakpoint-down(md) {
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(lg) {
+        @include make-col(6);
+    }
+    padding-top: 30px;
+    &__items{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+    }
+    &__link{
+      font-weight: bold;
+      color: $base-black;
+      padding: 16px;
+      text-decoration: none;
+    }
+  }
+  .options-section{
+    @include make-col-ready();
+    @include media-breakpoint-down(md) {
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(lg) {
+        @include make-col(3);
+    }
+    padding-top: 30px;
+      &__items{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+    }
+    &__item{
+      display: inline-flex;
+    }
+      
+    &__text{
+      font-weight: 500;
+      color: $brown-grey;
+      padding-left: 15px;
+  
+      &--currency{
+        color: $base-black;
+        padding-left: 10px;
+      }
+    }
+  }
