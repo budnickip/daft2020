@@ -1,0 +1,10 @@
+body{
+    background: #ffffff;
+    font-family: Jost;
+    font-size: 13px;
+  }
+  .main-container{
+    @include make-container();
+    padding-right: 0px;
+    padding-left: 0px;
+  }

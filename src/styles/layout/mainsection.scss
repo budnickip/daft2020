@@ -1,0 +1,217 @@
+.main-wrapper{
+    @include make-container();
+  
+  }
+  
+  .main-section{
+  
+    &__header{
+      @extend .text-center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      font-weight: 500;
+      color: $base-black;
+    }
+  }
+  
+  .shop-list{
+    @include make-row();
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .shop-card{
+    @include make-col-ready();
+    @include media-breakpoint-down(md) {
+      @include make-col(6);
+    }
+    @include media-breakpoint-up(lg) {
+        @include make-col(3);
+    }
+    
+    &__img{
+      @extend .card-img-top;
+    }
+  }
+  
+  .card-body{
+    padding-left: 0;
+    &__item{
+      font-weight: 500;
+      color: $greyish-brown;
+      &--new{
+        font-size: $size-small;
+        font-weight: 900;
+        color: $black-three;
+      }
+      &--price{
+        display: inline-flex;
+        font-weight: bold;
+        color: $base-black;
+      }
+      &--discount{
+        display: inline-flex;
+        font-weight: bold;
+        color: $brown-grey;
+        text-decoration: line-through;
+        padding-left: 10px;
+      }
+      &--add{
+        display: none;
+        font-weight: bold;
+        color: $base-black;
+      }
+      &--icons{
+        display: none;
+      }
+    }
+  }
+  
+  .card-body:hover .card-body__item--price{
+    display: none;
+  }
+  
+  .card-body:hover .card-body__item--discount{
+    display: none;
+  }
+  .card-body:hover .card-body__item--add{
+    display: inline-flex;
+  }
+  .card-body:hover .card-body__item--icons{
+    display: inline-flex;
+    float: right;
+  }
+  
+  .card-title{
+    border: solid 2px $base-black;
+    font-size: 12px;
+    width: 42px;
+    padding-left: 5px;
+    font-weight: 900;
+    color: $black-three;
+  }
+  
+  .all-products{
+    @extend .text-center;
+  
+    &__button{
+      width: 163px;
+      height: 48px;
+      border: solid 2px $base-black;
+      background-color: #ffffff;
+      font-weight: 500;
+      color: $base-black;
+    }
+  }
+  
+  .group-products{
+    @include make-row();
+    padding: 15px;
+  }
+  .group-left{
+    @include make-col-ready();
+    @include media-breakpoint-down(md) {
+      @include make-col(12);
+    }
+    &__img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    padding: 15px;
+  }
+  .group-right-products2{
+    @include make-col-ready();
+    @include media-breakpoint-down(md) {
+      @include make-col(12);
+    }
+    &__img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    padding: 15px;
+  }
+  .group-right-products3{
+    @include make-col-ready();
+    @include media-breakpoint-down(md) {
+      @include make-col(12);
+    }
+    &__img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    padding: 15px;
+  }
+  .group-right-products{
+    @include make-col-ready();
+    @include media-breakpoint-down(md) {
+      @include make-col(12);
+    }
+    &__img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    padding: 15px;
+  }
+  
+.newsletter{
+    margin-top:50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    &__text{
+      color: $greyish-brown;
+      font-weight: 500;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  }
+  
+  .join-newsletter{
+    @extend .mx-auto;
+    @include make-row();
+   /* width: 95%; */
+    border-bottom: 3px;
+  
+    &__text{
+      @extend .text-center;
+      font-weight: 500;
+      color: $greyish-brown;
+      padding-top: 15px;
+    }
+  }
+  
+  
+  .newsletter-email{
+    @include make-col-ready();
+    @include make-col(6);
+    @extend .text-left;
+    &__input{
+      border: none;
+      font-weight: 500;
+      opacity: 0.5;
+      color: rgba(69, 69, 69, 0.5);
+    }
+  }
+  
+  .newsletter-subscribe{
+    @include make-col-ready();
+    @include make-col(6);
+    @extend .text-right;
+  
+    &__button{
+      border: none;
+      background-color: #ffffff;
+      font-weight: 500;
+      color: $base-black;
+    }
+  }
+  
+  .line {
+    width: 100vw;
+    height: 2px;
+    background-color: $base-black;
+  }
+  
