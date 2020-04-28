@@ -1,5 +1,4 @@
 const loadData = () => {
-    var shop = document.querySelector('.shop-all');
     var buttonAllProducts = document.querySelector(".all-products__button");
     var buttonDiv = document.querySelector('.all-products');
 
@@ -38,6 +37,8 @@ const loadData = () => {
     ];
 
     buttonAllProducts.addEventListener("click", function(){
+    buttonDiv.style.display = "none";
+    var shop = document.querySelector('.shop-all');
     var shopOld = shop.innerHTML;
     var newProducts = '<div class="shop-list">';
     var i = 1;
@@ -50,7 +51,6 @@ const loadData = () => {
     });
     newProducts = newProducts + '</div>';
     shop.innerHTML = shopOld + newProducts;
-    buttonDiv.innerHTML = " ";
     });
 }
 export default loadData;
