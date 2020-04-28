@@ -41,16 +41,9 @@ const loadData = () => {
     var shop = document.querySelector('.shop-all');
     var shopOld = shop.innerHTML;
     var newProducts = '<div class="shop-list">';
-    var i = 1;
     moreProducts.forEach(item => {
-        if(i%4 == 0)
-        newProducts = newProducts + '<div class="shop-card"><img class="shop-card__img" src="' + item.image + '"alt="Card image cap"><div class="card-body"><p class="card-body__item">' + item.text  + '</p><p class="card-body__item--price">' + item.price + '</p><p class="card-body__item--add">ADD TO CART</p><p class="card-body__item--icons"><img class="card-body__img" src="/assets/9ef4929d09df29ff3a001987ec297b1c.svg" alt="search"><img class="card-body__img" src="/assets/a2525626f2e8ee6fa6faa440a1d8ec0c.svg" alt="heart"></p></div></div></div><div class="shop-list">';
-        else{
-        newProducts = newProducts + '<div class="shop-card"><img class="shop-card__img" src="' + item.image + '"alt="Card image cap"><div class="card-body"><p class="card-body__item">' + item.text  + '</p><p class="card-body__item--price">' + item.price + '</p><p class="card-body__item--add">ADD TO CART</p><p class="card-body__item--icons"><img class="card-body__img" src="/assets/9ef4929d09df29ff3a001987ec297b1c.svg" alt="search"><img class="card-body__img" src="/assets/a2525626f2e8ee6fa6faa440a1d8ec0c.svg" alt="heart"></p></div></div>';
-        }
-        i++;
+        newProducts = newProducts + '<div class="shop-card"><img class="shop-card__img" src="' + item.image + '"alt="Card image cap"><div class="card-body"><p class="card-body__item">' + item.text  + '</p><p class="card-body__item--price">' + item.price + '</p><p class="card-body__item--add">ADD TO CART</p><p class="card-body__item--icons"><img class="card-body__img" src="/assets/9ef4929d09df29ff3a001987ec297b1c.svg" alt="search"><img class="card-body__img" src="/assets/a2525626f2e8ee6fa6faa440a1d8ec0c.svg" alt="heart"></p></div></div></div>';
     });
-    newProducts = newProducts + '</div>';
     shop.innerHTML = shopOld + newProducts;
     });
 }
