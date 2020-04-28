@@ -1,0 +1,26 @@
+.arrow-top{
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 30px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    display: none;
+    z-index: 99;
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-5px);
+        transition: .3s;
+    }
+    &__image{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+
+    }
+  }

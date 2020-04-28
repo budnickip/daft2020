@@ -1,10 +1,12 @@
 
 @import '../../node_modules/css-reset-and-normalize/scss/reset-and-normalize';
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "~glider-js/glider.min.css";
 @import './abstracts/variables.scss';
 
 @import './base/base.scss';
 
+@import './components/arrow.scss';
 @import './components/footer-component.scss';
 @import './components/navigation.scss';
 @import './components/newsletter.scss';

@@ -72,3 +72,14 @@
       }
     }
   }
+  .copyright{
+    @include make-col-ready();
+    @include make-col(12);
+    padding-top: 16px;
+    padding-left: 30px;
+
+      &__text{
+        font-size: 13px;
+        color: $base-black;
+      }
+  }

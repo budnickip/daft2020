@@ -1,25 +1,18 @@
 import daftcodeImgUrl from './assets/daftcode.png'
 import 'bootstrap';
+import '../node_modules/glider-js/glider.min.js';
 import 'jquery';
 import 'popper.js';
+import menuHide from './scripts/menu.js'
+import slider from './scripts/slider.js';
+import footerDate from './scripts/footer-date.js';
+import loadData from './scripts/load-data';
+import scrollingTop from './scripts/scrolling-top'
 
-
-window.addEventListener("scroll",function(){
-  var menu = document.getElementsByClassName('page-navigation');
-
-  if(window.pageYOffset > 150){
-    console.log("powinno byc");
-    menu[0].style.backgroundColor =  "rgba(255,255,255,0.98)";
-  } else if (window.pageYOffset < 150){
-    menu[0].style.backgroundColor =  "rgba(0,0,0,0)";
-  }
-},false);
-/*
-export default function() {
-  const section = document.createElement('section')
-  const img = document.createElement('img')
-  img.src = daftcodeImgUrl
-  section.appendChild(img)
-  document.body.appendChild(section)
-}
-*/
+document.addEventListener('DOMContentLoaded', function() {
+  menuHide();
+  slider();
+  footerDate();
+  loadData();
+  scrollingTop();
+});

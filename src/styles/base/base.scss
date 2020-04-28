@@ -3,8 +3,14 @@ body{
     font-family: Jost;
     font-size: 13px;
   }
-  .main-container{
+
+html {
+    scroll-behavior: smooth;
+}
+  
+.main-container{
     @include make-container();
     padding-right: 0px;
     padding-left: 0px;
-  }
+}
+  
