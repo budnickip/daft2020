@@ -7,9 +7,11 @@ import menuHide from './scripts/menu.js'
 import slider from './scripts/slider.js';
 import footerDate from './scripts/footer-date.js';
 import loadData from './scripts/load-data';
-import scrollingTop from './scripts/scrolling-top'
+import scrollingTop from './scripts/scrolling-top';
+import loadProducts from './scripts/load-products';
+import loadGroups from './scripts/load-groups';
 
-
+/*
 const script = () => {
 document.addEventListener('DOMContentLoaded', function() {
   var someModule = someModule();
@@ -21,6 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+
+
 var someModule = (() =>{
   return{
     menuHider: menuHide(),
@@ -30,5 +34,18 @@ var someModule = (() =>{
     mScrollingTop: scrollingTop()
   }
 })();
+
+
+}*/
+
+const script = () => {
+  menuHide();
+  slider();
+  footerDate();
+  footerDate();
+  loadData();
+  scrollingTop();
+  loadProducts();
+  loadGroups();
 }
 export default script;
