@@ -18,7 +18,7 @@ const fetchData = async () => {
         .then(response => response.products)
 
         .catch(error => {
-            console.log("Błąd API! ")
+            console.error("Błąd API! ")
             products = false;
         }
         );

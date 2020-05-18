@@ -39,6 +39,7 @@ const slider = async () => {
     sliderDiv.innerHTML = newProducts;
 
   } else {
+    sliderDiv.style = "color: red; font-size:40px;";
     sliderDiv.innerHTML = "Błąd ładowania API, spróbuj później!";
   }
 
