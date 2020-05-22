@@ -1,8 +1,4 @@
-import daftcodeImgUrl from './assets/daftcode.png'
-import 'bootstrap';
 import '../node_modules/glider-js/glider.min.js';
-import 'jquery';
-import 'popper.js';
 import menuHide from './scripts/menu.js'
 import slider from './scripts/slider.js';
 import footerDate from './scripts/footer-date.js';
